@@ -1,0 +1,13 @@
+all2: g2c.o g2d.o test2.c
+	gcc -o g2 g2c.o g2d.o test2.c
+g2c.o:g2c.c
+	gcc -c g2c.c
+
+g2d.o:g2d.c
+	gcc -c g2d.c
+
+
+clean:
+	rm test2.o
+
+objs2=g2c.o g2d.o

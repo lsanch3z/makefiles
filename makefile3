@@ -1,0 +1,11 @@
+all:final #rule to include makefile 1 and 2?
+include makefile1
+include makefile2
+
+final: $(objs1) $(objs2)
+	gcc -o final $(objs1) $(objs2) main.c
+
+
+
+
+

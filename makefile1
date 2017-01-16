@@ -1,0 +1,12 @@
+all1:g1a.o g1b.o test1.c
+	gcc -o g1 g1a.o g1b.o test1.c
+
+g1a.o:g1a.c
+	gcc -c g1a.c
+	echo creating g1a.o
+
+g1b.o:g1b.c
+	gcc -c g1b.c
+	echo creating g1b.o
+
+objs1=g1a.o g1b.o
